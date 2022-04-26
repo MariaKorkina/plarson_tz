@@ -1,0 +1,50 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+.body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+	max-height: 100vh;
+    font-size: 25px;
+}
+
+/*шапка с фиксированной высотой 50px*/
+.header {
+	height: 50px;
+	background-color: rgb(190, 190, 230);
+}
+
+.main {
+	display: flex;
+    flex: 1;
+	overflow: hidden;
+}
+
+/*левая панель с фиксированной шириной 200px и внутренней прокруткой*/
+.users {
+	width: 200px;
+	background-color: rgb(204, 238, 204);
+	overflow: auto;
+}
+
+/*правая панель (окно чата с прокруткой)*/
+.chatroom {
+	flex: 1;
+	background-color: rgb(216, 189, 198);
+	overflow: auto;
+}
+
+.chatroom > p {
+	margin: 10px;
+}
+
+/*подвал с фиксированной высотой 100px*/
+.footer {
+	height: 100px;
+	background-color: rgb(245, 198, 198);
+}
+
